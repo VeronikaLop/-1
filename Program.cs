@@ -1,31 +1,17 @@
-﻿Console.WriteLine("Введите номер дня недели от 1 до 7");
-int day = int.Parse(Console.ReadLine()!);
-int a = 1;
-int b = 2;
-int c = 3;
-int d = 4;
-int i = 5;
-int f = 6;
-int g = 7;
-if (day == a){
-    Console.WriteLine("Понедельник");
+﻿int numberA = new Random().Next(10, 99);
+Console.WriteLine(numberA);
+
+if (numberA > 10 && numberA < 99)
+{
+if (numberA / 10 > numberA % 10)
+{
+        Console.WriteLine("Первая цифра больше");
 }
-if (day == b){
-    Console.WriteLine("Вторник");
+else
+if (numberA / 10 == numberA % 10)
+{
+        Console.WriteLine("Цифры одинаковы");
 }
-if (day == c){
-    Console.WriteLine("Среда");
+else
+Console.WriteLine("Вторая цифра больше");
 }
-if (day == d){
-    Console.WriteLine("Четверг");
-}
-if (day == i){
-    Console.WriteLine("Пятница");
-}
-if (day == f){
-    Console.WriteLine("Суббота");
-}
-if (day == g){
-    Console.WriteLine("Воскресенье");
-}
-Console.WriteLine(day);
