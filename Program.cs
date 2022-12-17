@@ -1,17 +1,11 @@
-﻿int numberA = new Random().Next(10, 99);
-Console.WriteLine(numberA);
+﻿Console.Write("Введите число: ");
+int a = int.Parse(Console.ReadLine()!);
 
-if (numberA > 10 && numberA < 99)
+if (a%2==0)
 {
-if (numberA / 10 > numberA % 10)
-{
-        Console.WriteLine("Первая цифра больше");
+    Console.WriteLine("Четное число ");
 }
 else
-if (numberA / 10 == numberA % 10)
 {
-        Console.WriteLine("Цифры одинаковы");
-}
-else
-Console.WriteLine("Вторая цифра больше");
+    Console.WriteLine("Нечетное число ");
 }
